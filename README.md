@@ -2,9 +2,6 @@
 
 This is the clone of Bestbuy.com
 
-## Screenshots
-
-
 
 ## Technologies Used
 
