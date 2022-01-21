@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Best Buy</title>
+    <style>
+        #main {
+            width: 100%;
+        }
+
+        #container {
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        #box2 {
+            display: flex;
+            border-bottom: 1px solid;
+        }
+
+        .box2_div1,
+        .box2_div2 {
+            flex-basis: 45%;
+        }
+
+        #credit {
+            width: 56%;
+        }
+
+        #Place_Order {
+            width: 30%;
+            height: 30px;
+            background-color: black;
+            color: white
+        }
+
+        .receipt {
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div><img src="https://i.postimg.cc/SKYqYT2D/510001-ghp-img-icons-vg-7b5677jgjhg8f8jvrc.png"></div>
+
+        <div id="container">
+
+            <div id="box1">
+                <div class="checkout">
+                    <i class="fas fa-lock"></i>
+                    <h2>How do you want to pay today?</h2>
+                    <hr>
+
+                </div>
+
+            </div>
+
+            <div id="box2">
+
+                <div class="box2_div2">
+                    <h3 class="delivery_method">Delivery Method</h3>
+                    <p class="standard">Standard Delivery</p>
+                    <p class="import">No Additional Import Charges</p>
+                    <p class="bussiness_days">Delivered in 3-10 Business Days</p>
+                </div>
+            </div>
+            <div id="payment">
+                <h3 class="payment">Payment</h3>
+
+                <input type="checkbox"> <span>My billing address is the same as my delivery address</span></br><br>
+                <div id="cardholder">
+                    <input type="radio"> <span>Credit or Debit Card</span></br><br>
+                    <input type="number" name="credit" placeholder="Card Number" id="credit"></br><br>
+                    <input type="number" name="expiry" placeholder="MM / YY" id="expiry">
+                    <input type="number" name="Security" placeholder="CVV" id="security"><br>
+
+                </div><br>
+                <hr>
+            </div>
+            <div id="last_div">
+                <input type="checkbox"> <span>By placing your order, you agree to our BestBuy.com Terms and Conditions
+                    and our Privacy Policy.</span></br><br>
+
+                <button onclick="placeholder()" id="Place_Order">Place Order</button>
+            </div><br>
+
+        </div>
+
+        <div>
+            <img src="https://i.postimg.cc/L4ZpL0Zv/146005-ghp-img-icons-vg-5g67a76vrc.png">
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function placeholder() {
+        alert("Your Order is Successfully Placed");
+    }
+
+</script>

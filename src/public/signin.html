@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In to Best Buy</title>
+    <style>
+        
+        #main {
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        #middle {
+            height: 680px;
+            background-color: #e8ebee;
+            border: 2px solid green;
+        }
+
+        #center {
+            width: 400px;
+            height: 610px;
+            background-color: white;
+            margin-left: 550px;
+            margin-top: 30px;
+        }
+
+        #m1 {
+            text-align: center;
+            font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #040c13;
+        }
+
+        #signinbox {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #m4 {
+            font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #001e73;
+        }
+
+        #bottom {
+            height: 120px;
+        }
+
+        input {
+            width: 350px;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            width: 357px;
+            height: 40px;
+            background-color: #0046be;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <a href="index.html"><img
+                    src="https://i.postimg.cc/6qpc5Dgj/316005-ghp-img-icons-vg-5ghf85667fghvrc.png"></a>
+        </div>
+
+        <div id="middle">
+            <div id="center"><br>
+                <div id="m1">Sign In to Best Buy</div><br>
+                <div id="signinbox">
+                    <form id="myForm" action="" onsubmit="signin(event)">
+
+                        <input type="email" id="email" placeholder="Email Address" /><br><br>
+                        <input type="password" id="password" placeholder="Password" /><br>
+
+                        <div id="m4"><u>Forgot your password?</u></div><br>
+
+                        <button>Sign In</button>
+                    </form>
+                </div>
+                <div>
+                    <img src="https://i.postimg.cc/jjCMzWXx/410001-ghp-img-icons-vg-7bj788f8jvrc.png">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="bottom">
+            <img src="https://i.postimg.cc/LsVjYxzr/326005-ghp-img-icons-vg-5ghf8jvrc.png">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function signin(e) {
+        e.preventDefault();
+        let div = document.getElementById("signinbox")
+
+        let myForm = document.getElementById("myForm");
+        let email = myForm.email.value;
+        let password = myForm.password.value;
+
+        let all_users = JSON.parse(localStorage.getItem("users"));
+
+        all_users.forEach(function (user) {
+            if (email === user.email && password === user.password) {
+                alert("Login Succesfull");
+                window.location.href = "homepage.html";
+            } else {
+                alert("Incorrect Credential!")
+            }
+
+        });
+    }
+</script>

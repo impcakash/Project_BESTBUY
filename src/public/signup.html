@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Buy: Create an account</title>
+    <style>
+        
+        #main {
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        #middle {
+            height: 680px;
+            background-color: #e8ebee;
+            border: 2px solid green;
+        }
+
+        #center {
+            width: 400px;
+            height: 610px;
+            background-color: white;
+            margin-left: 550px;
+            margin-top: 30px;
+        }
+
+        #m1 {
+            text-align: center;
+            font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #040c13;
+        }
+
+        #m2 {
+            text-align: center;
+            font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #040c13;
+        }
+
+        #m3 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #m4 {
+            font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+
+        #bottom {
+            height: 120px;
+        }
+
+        input {
+            width: 350px;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            width: 357px;
+            height: 40px;
+            background-color: #0046be;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <a href="index.html"><img
+                    src="https://i.postimg.cc/6qpc5Dgj/316005-ghp-img-icons-vg-5ghf85667fghvrc.png"></a>
+        </div>
+
+        <div id="middle">
+            <div id="center"><br>
+                <div id="m1">Create an Account</div><br>
+                <div id="m2">Shopping for your business? <u>Create a business account.</u></div><br>
+                <div id="m3">
+                    <form id="myForm" action="" onsubmit="signup(event)">
+
+                        <input type="text" id="name" placeholder="First Name" /><br><br>
+                        <input type="text" id="name2" placeholder="Last Name" /><br><br>
+                        <input type="email" id="email" placeholder="Email Address" /><br><br>
+                        <input type="password" id="password" placeholder="Password" /><br><br>
+                        <input type="password" id="password2" placeholder="Confirm Password" /><br><br>
+                        <input type="number" id="number" placeholder="Mobile Phone Number" /><br><br>
+
+                        <div id="m4">By continuing you agree to our <u>Terms and Conditions</u>, our <u>Privacy
+                                Policy</u>, and the <u>My Best Buy® Program Terms</u>.</div><br>
+
+                        <a href="signin.html"><button id="btn" onclick="createAccount()">Create an Account</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <img src="https://i.postimg.cc/LsVjYxzr/326005-ghp-img-icons-vg-5ghf8jvrc.png">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function signup(e) {
+        e.preventDefault();
+
+        let myForm = document.getElementById("myForm");
+
+        let name = myForm.name.value;
+        let email = myForm.email.value;
+        let password = myForm.password.value;
+
+        if (localStorage.getItem("users") === null) {
+            localStorage.setItem("users", JSON.stringify([]));
+        }
+
+        let user = {
+            name,
+            email,
+            password
+        };
+
+        let arr = JSON.parse(localStorage.getItem("users"));
+        arr.push(user);
+
+        localStorage.setItem("users", JSON.stringify(arr));
+    }
+
+    function createAccount() {
+        let myForm = document.getElementById("myForm");
+        let btn = myForm.btn.value;
+        let password = myForm.password.value;
+        if (password.length >= 6) {
+            alert("Account Created Successfully");
+            window.location.href = "signin.html";
+        } else {
+            alert("Password length Should be greater than 6 Character!");
+        }
+    }
+
+</script>
