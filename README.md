@@ -1,6 +1,6 @@
 # Project_BESTBUY
 
-This is the clone of Bestbuy.com
+This is the clone of Bestbuy.com, where we can purchase any consumer electronics, appliances, computing devices, mobile phones, entertainment, and other products by sitting in one place.
 
 ## Screenshots
 
