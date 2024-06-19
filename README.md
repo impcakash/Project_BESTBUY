@@ -21,15 +21,16 @@ This is the clone of Bestbuy.com, where we can purchase any consumer electronics
 - JavaScript
 - NodeJS
 - MongoDB
-- Mongoose
 - Express
 - HTML
 - CSS
 
 ## Functional Things :
-* User Sign In.
-* User Sign Up.
-* Products Page.
-* All types of Sort/Filter Functionality.
-* Add to Cart Button.
-* Multiple Payment Option.
+
+- User Sign In.
+- User Sign Up.
+- Products Page.
+- All types of Sort/Filter functionality.
+- Add to Cart Button.
+- Multiple Payment Option.
+- Coupon Discount Option.
