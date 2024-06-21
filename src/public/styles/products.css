@@ -1,0 +1,119 @@
+#main {
+    width: 100%;
+}
+
+#top {
+    height: 110px;
+    background-color: #0046be;
+}
+
+#top1 {
+    width: 100%;
+    height: 60px;
+}
+
+#top2 {
+    width: 100%;
+    display: grid;
+    gap: 2.8%;
+    grid-template-columns: 6% 8% 9% 6% 7% 9% 6% 7% 7% 7%;
+}
+
+#top2>div {
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+#middle {
+    width: 100%;
+    display: inline-block;
+}
+
+#middle_left {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#middle_box_left_text {
+    width: 77%;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
+    display: inline-block;
+}
+
+#middle_box_left_symbol {
+    width: 20%;
+    font-size: 15px;
+    padding-top: 5%;
+    text-align: right;
+    display: inline-block;
+}
+
+#middle_right {
+    width: 76%;
+    height: 3850px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+}
+
+#middle_right_top {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1%;
+    height: 330px;
+}
+
+#middle_box_right_bottom {
+    width: 100%;
+}
+
+#middle_box_right_top {
+    color: #393939;
+    width: 100%;
+}
+
+.middle_box_right_top_head {
+    font-family: "Brandon Text", Arial, sans-serif;
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.middle_box_right_top_head>p {
+    font-size: 13px;
+}
+
+.middle_box_right_top_bottom {
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button_add_to_cart {
+    padding-left: 70%;
+    padding-top: 3%;
+}
+
+#products {
+    padding-left: 2%;
+    display: grid;
+    grid-template-columns: 42% 42%;
+    gap: 2%;
+}
+
+#products>div {
+    font-family: "Brandon Text", Arial, sans-serif;
+    color: #393939;
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+}
