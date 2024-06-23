@@ -175,3 +175,19 @@ function showProducts(d) {
 showProducts(data);
 
 
+if (localStorage.getItem("cart") === null) {
+    localStorage.setItem("cart", JSON.stringify([]));
+}
+
+function addtoCart(p) {
+    let products_cart = JSON.parse(localStorage.getItem("cart"));
+
+    products_cart.push(p);
+
+    localStorage.setItem("cart", JSON.stringify(products_cart));
+
+    console.log("products_cart:", products_cart);
+
+}
+
+
