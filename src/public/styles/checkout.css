@@ -1,0 +1,34 @@
+#main {
+    width: 100%;
+}
+
+#top {
+    height: 80px;
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+#box1 {
+    flex-basis: 68%;
+
+    margin-left: 1%;
+}
+
+.email,
+.address {
+    width: 98%;
+}
+
+.firstname,
+.lastname,
+.address2,
+.PostalCode,
+.city,
+.region,
+.phone {
+    width: 48.3%;
+}
