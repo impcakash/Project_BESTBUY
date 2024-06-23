@@ -191,3 +191,86 @@ function addtoCart(p) {
 }
 
 
+function sorting_by_size_HL() {
+    let arr = data.sort(function (a, b) {
+        return b.size - a.size;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_size_LH() {
+    let arr = data.sort(function (a, b) {
+        return a.size - b.size;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_price_HL() {
+    let arr = data.sort(function (a, b) {
+        return b.price - a.price;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_price_LH() {
+    let arr = data.sort(function (a, b) {
+        return a.price - b.price;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_rating_HL() {
+    let arr = data.sort(function (a, b) {
+        return b.rating - a.rating;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_rating_LH() {
+    let arr = data.sort(function (a, b) {
+        return a.rating - b.rating;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_ram_HL() {
+    let arr = data.sort(function (a, b) {
+        return b.ram - a.ram;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_ram_LH() {
+    let arr = data.sort(function (a, b) {
+        return a.ram - b.ram;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_speed_HL() {
+    let arr = data.sort(function (a, b) {
+        return b.speed - a.speed;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_speed_LH() {
+    let arr = data.sort(function (a, b) {
+        return a.speed - b.speed;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_storage_HL() {
+    let arr = data.sort(function (a, b) {
+        return b.storage - a.storage;
+    })
+    showProducts(arr);
+}
+
+function sorting_by_storage_LH() {
+    let arr = data.sort(function (a, b) {
+        return a.storage - b.storage;
+    })
+    showProducts(arr);
+}
