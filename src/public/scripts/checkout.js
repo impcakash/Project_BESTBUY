@@ -25,3 +25,24 @@ var total_amount = document.getElementById("p_total")
 
 total_amount.textContent = "$" + Math.floor(total_p_amount)
 
+let promo = document.getElementById("promo")
+
+function promo_code(e) {
+
+    e.preventDefault()
+    let count = 0
+
+    if (promo.value === "masai30") {
+        count++
+        let discount = Math.floor(total_p_amount * 30 / 100)
+        console.log(discount)
+        total_amount.textContent = "$" + (total_p_amount - discount);
+        setTimeout(function () {
+            alert("Coupon applied Successfully");
+        }, 1000);
+    }
+    else {
+        alert("Invalid Coupon Code!")
+    }
+}
+
