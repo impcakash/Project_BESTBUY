@@ -46,3 +46,25 @@ function promo_code(e) {
     }
 }
 
+
+function ShowProducts() {
+    var cart = document.getElementById("cart")
+    let div_cart = document.createElement("div");
+    div_cart.setAttribute("class", "div_cart")
+    var div_description = document.createElement("div");
+
+    cart.append(div_cart)
+    product_cart.forEach(function (product) {
+        let name = document.createElement("p");
+        name.textContent = product.name;
+        let price = document.createElement("p");
+        price.textContent = "$" + product.price
+        let img = document.createElement("img");
+        img.setAttribute("class", "product_img")
+        img.src = product.img
+        div_cart.append(img, name, price)
+
+    })
+}
+
+ShowProducts();
