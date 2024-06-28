@@ -1,8 +1,10 @@
 # Project_BESTBUY
 
+https://projectbestbuy.netlify.app/
+
 This is the clone of Bestbuy.com, where we can purchase any consumer electronics, appliances, computing devices, mobile phones, entertainment, and other products by sitting in one place.
 
-## Screenshots
+## Screenshots:
 
 ![App Screenshot](https://miro.medium.com/max/875/1*PE-tmKnHStbeLBgpQnNMAw.png)
 
@@ -16,7 +18,7 @@ This is the clone of Bestbuy.com, where we can purchase any consumer electronics
 
 ![App Screenshot](https://miro.medium.com/max/875/1*1ZsJ-s4GWTXRq06suRQ6PA.png)
 
-## Technologies Used
+## Tech Stack:
 
 - JavaScript
 - NodeJS
@@ -25,7 +27,7 @@ This is the clone of Bestbuy.com, where we can purchase any consumer electronics
 - HTML
 - CSS
 
-## Functional Things :
+## Functionality:
 
 - User Sign In.
 - User Sign Up.
